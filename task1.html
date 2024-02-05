@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Объекты в JavaScript. Задание #1</title>
+  </head>
+  <body>
+    <h1>Объекты в JavaScript</h1>
+    <h2>Задание 1.</h2>
+    <p>
+      Дан массив пользователей users. У каждого из них есть свойство status,
+      которое может равняться или "online", или "offline": <br />
+
+      const users = [ <br />
+      { <br />
+      username: 'David', <br />
+      status: 'online', <br />
+      lastActivity: 10 <br />
+      }, <br />
+      { <br />
+      username: 'Lucy', <br />
+      status: 'offline', <br />
+      lastActivity: 22 <br />
+      }, <br />
+      { <br />
+      username: 'Bob', <br />
+      status: 'online', <br />
+      lastActivity: 104 <br />
+      } <br />
+      ];
+    </p>
+    <p>
+      необходимо создать новый массив onlineUsers, который будет содержать
+      объекты только тех пользователей, у которых status равен "online".
+    </p>
+    <p>
+      После выведите через alert() сообщение: “Сейчас в онлайн следующие
+      пользователи: usersOnlineNames”, где usersOnlineNames - строка, в которой
+      имена пользователей отображаются через запятую.
+    </p>
+    <p>
+      Для кода выше результат должен быть следующим: “Сейчас в онлайн следующие
+      пользователи: David, Bob”.
+    </p>
+    <a href="index.html">На главную страницу</a>
+    <script src="task1.js"></script>
+  </body>
+</html>

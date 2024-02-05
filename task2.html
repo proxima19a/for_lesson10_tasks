@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Объекты в JavaScript. Задание #2</title>
+  </head>
+  <body>
+    <h1>Объекты в JavaScript</h1>
+    <h2>Задание 2.</h2>
+    <p>
+      Представьте, что вы разрабатываете программу выдачи талончиков для местной
+      больницы. До этого талончики выписывались вручную и вам необходимо
+      оптимизировать данную задачу.
+    </p>
+    <p>
+      Требуется создать функцию giveTalonsInOrder(), которая сортирует очередь
+      из пациентов. Она принимает в себя 2 параметра:
+    </p>
+    <ol>
+      <li>
+        patients - массив объектов. Каждый объект хранит информацию об имени
+        пациента и его уникальном номере - id.
+      </li>
+      <li>
+        orders - массив уникальных номеров id, который указывает порядок, в
+        котором должны стоять в очереди пациенты.
+      </li>
+    </ol>
+    <p>
+      Функция должна возвращать новый массив, в котором объекты из массива
+      patients будут отсортированы по id из массива orders.
+    </p>
+    <p>Посмотрите на возможный результат функции giveTalonsInOrder():</p>
+    <p>
+      const ordersArr = [4, 2, 1, 3]; <br />
+      const people = [ <br />
+      { id: 1, name: "Максим" }, <br />
+      { id: 2, name: "Николай" }, <br />
+      { id: 3, name: "Ангелина" }, <br />
+      { id: 4, name: "Виталий" }, <br />
+      ]; <br />
+      <br />
+      const result = giveTalonsInOrder(people, ordersArr); <br />
+      console.log('result', result); <br />
+      /* Возвращает массив <br />
+      [ <br />
+      { id: 4, name: 'Виталий' }, <br />
+      { id: 2, name: 'Николай' }, <br />
+      { id: 1, name: 'Максим' }, <br />
+      { id: 3, name: 'Ангелина' } <br />
+      ] <br />
+      */
+    </p>
+
+    <a href="index.html">На главную страницу</a>
+    <script src="task2.js"></script>
+  </body>
+</html>
