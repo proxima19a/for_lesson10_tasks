@@ -9,16 +9,48 @@
   <body>
     <h1>Объекты в JavaScript</h1>
     <h2>Задание 3.</h2>
-    <p></p>
-    <p></p>
-    <p></p>
-    <p></p>
-    <p></p>
-    <p></p>
+    <p>
+      Необходимо создать функцию, которая будет работать с объектами. Назовите
+      ее handleObject(). Она принимает в себя 3 параметра:
+    </p>
     <ol>
-      <li></li>
-      <li></li>
+      <li>obj - объект, с которым будет работать функция.</li>
+      <li>key - ключ объекта.</li>
+      <li>action - действие, которое мы будем совершать над объектом.</li>
     </ol>
+    <p>Параметр action может быть 4-мя значениями:</p>
+    <ol>
+      <li>
+        get - если action равен get, то функция handleObject() должна вернуть
+        значение ключа key в объекте obj.
+      </li>
+      <li>
+        add - если action равен add, то функция handleObject() должна добавить
+        новый ключ key в объект object и присвоить значение пустой строки "".
+        Также из функции необходимо возвратить обновленный объект obj.
+      </li>
+      <li>
+        delete - если action равен delete, то функция handleObject() должна
+        удалить свойство key из объекта obj и возвратить обновленный объект.
+      </li>
+    </ol>
+    <p>
+      Если action равен любому другому значению, то функция handleObject()
+      должна возвратить объект obj. Протестируйте функцию на этом коде:
+    </p>
+    <p>
+      const student = { <br />
+      name: 'Maxim', <br />
+      programmingLanguage: 'JavaScript', <br />
+      } <br />
+      <br />
+      const result = handleObject(student, 'programmingLanguage', 'delete');
+      <br />
+      console.log('result', result); // { name: 'Maxim' }
+    </p>
+    <p></p>
+    <p></p>
+
     <a href="index.html">На главную страницу</a>
     <script src="task3.js"></script>
   </body>
