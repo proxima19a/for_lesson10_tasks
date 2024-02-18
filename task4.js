@@ -1,9 +1,9 @@
 // 1
 const student = {
-  fullName: "Максим",
-  experienceInMonths: 12,
-  stack: ["HTML", "CSS", "JavaScript", "React"]
-};
+fullName: "Максим",
+experienceInMonths: 12,
+stack: ["HTML", "CSS", "JavaScript", "React"]
+ };
 
 function giveJobToStudent(student, jobName) {
   alert(
@@ -13,9 +13,8 @@ function giveJobToStudent(student, jobName) {
     ...student,
     job: jobName
   };
-}
+ }
 
-const updatedStudent = giveJobToStudent(student, "веб-разработчик");
-console.log("updatedStudent", updatedStudent);
+ const updatedStudent = giveJobToStudent(student, "веб-разработчик");
+ console.log("updatedStudent", updatedStudent);
 
-// 2
